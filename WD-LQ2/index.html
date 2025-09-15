@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Balitang False</title>
+    <style>
+      body {
+        font-family: Arial;
+        background-color: rgb(228, 225, 225);
+        margin: 0;
+      }
+      .navbar {
+        background-color: rgb(143, 0, 0);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      .navbar a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+      }
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+      .center {
+        flex-grow: 1;
+        text-align: center;
+      }
+      /* Dropdown */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 100px;
+        right: 0;
+        border: 1px solid rgb(205, 205, 205);
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 8px 12px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content a:hover {
+        background-color: white;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .card {
+        background-color: white;
+        border: 1px solid rgb(205, 205, 205);
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .card h3 {
+        margin: 5px 0;
+      }
+
+      /* Style for images inside cards */
+      .card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-top: 5px;
+      }
+
+      aside {
+        background: white;
+        border: 1px solid rgb(205, 205, 205);
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .friend {
+        display: flex;
+        align-items: center; /* aligns text vertically with the image */
+        margin: 5px 0;
+      }
+      .friend img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 8px;
+        border: 1px solid rgb(205, 205, 205);
+        object-fit: cover;
+      }
+
+      footer {
+        background-color: rgb(143, 0, 0);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="left"><b>BALITANG FALSE</b></div>
+      <div class="center">
+        <a href="#">Home</a>
+        <a href="#">Chat</a>
+        <a href="#">Marketplace</a>
+      </div>
+      <div class="right">
+        <div class="dropdown">
+          <a href="#">Settings ▾</a>
+          <div class="dropdown-content">
+            <a href="#">Profile</a>
+            <a href="#">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main content -->
+    <div style="display: flex">
+      <div style="width: 70%">
+        <div class="card">
+          <p><b>FakeNewsDaily</b> - 2 hr ago</p>
+          <h3>Local man claims WiFi gets stronger if you water the router</h3>
+          <p>
+            Residents were shocked when Mang Tonyo was seen watering his WiFi
+            router with a dipper. He insists the signal bars “bloom faster” if
+            you take care of it like a plant. Globe and PLDT refused to comment.
+          </p>
+          <div>👍 999 | 💬 420 | 🔗 Share | 💾 Save</div>
+        </div>
+
+        <div class="card">
+          <p><b>BananaFacts</b> - 4 hr ago</p>
+          <h3>
+            Breaking: Scientists confirm bananas are actually just tired
+            cucumbers
+          </h3>
+          <p>
+            According to a new “study,” bananas are cucumbers that got promoted
+            after years of hard work. Pineapples are applying for the same
+            upgrade.
+          </p>
+          <div>👍 732 | 💬 188 | 🔗 Share | 💾 Save</div>
+        </div>
+
+        <div class="card">
+          <p><b>SchoolSurvivor</b> - 1 hr ago</p>
+          <h3>
+            Student brings TV remote to class, accidentally changes teacher’s
+            slides
+          </h3>
+          <p>
+            Chaos erupted after a student tried to prank his classmates by
+            bringing his living room remote. Unfortunately, it synced with the
+            teacher’s projector. The lecture on history ended with Netflix
+            suggestions.
+          </p>
+          <div>👍 1.1K | 💬 356 | 🔗 Share | 💾 Save</div>
+        </div>
+
+        <div class="card">
+          <p><b>PetNewsNow</b> - 30 min ago</p>
+          <h3>
+            Dog runs for barangay captain, promises free belly rubs for all
+          </h3>
+          <p>
+            A Chow Chow named Donald Chomp officially filed candidacy papers.
+            His political platform includes unlimited treats, no fireworks, and
+            chasing motorcycles out of the neighborhood.
+          </p>
+          <img src="Doggo.webp" alt="Doggo running for barangay captain" />
+          <div>👍 2.4K | 💬 801 | 🔗 Share | 💾 Save</div>
+        </div>
+
+        <div class="card">
+          <p><b>TechFailTimes</b> - 5 hr ago</p>
+          <h3>AI chatbot refuses to help until given coffee</h3>
+          <p>
+            A programmer reported that his chatbot stopped answering questions
+            and only replied with “☕ first, then code.” Experts say this is the
+            first recorded case of artificial intelligence getting Monday blues.
+          </p>
+          <div>👍 876 | 💬 245 | 🔗 Share | 💾 Save</div>
+        </div>
+      </div>
+
+      <aside style="width: 30%">
+        <h3>Charuzu Yadrang Corpuz</h3>
+        <p>@Charuzu52</p>
+        <p>Address: Ilocos Sure</p>
+        <p>Birthday: Jun 11, 2006</p>
+        <p>Joined: 2010</p>
+
+        <h4>Friends</h4>
+        <div class="friend">
+          <img src="img/Potato_TextureUpdate.png" alt="Potato" />
+          Potato (@PoTaters)
+        </div>
+        <div class="friend">
+          <img src="img/Apple_1.14.png" alt="Apple" />
+          Apple (@Applepie)
+        </div>
+        <div class="friend">
+          <img src="img/PumpkinPieNew.png" alt="Pumpkin" />
+          Pumpkin (@Pinkekpie)
+        </div>
+        <div class="friend">
+          <img src="img/MelonSliceNew.png" alt="Melon" />
+          Melon (@Melown)
+        </div>
+        <div class="friend">
+          <img src="img/CookieNew.png" alt="Cookies" />
+          Cookies (@Cookie_Monster)
+        </div>
+      </aside>
+    </div>
+    <footer>Made by Charles Adrian G. Corpuz</footer>
+  </body>
+</html>
