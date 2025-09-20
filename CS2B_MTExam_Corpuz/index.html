@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ilocos Sur - Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Discover Baguio City</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Welcome to Baguio City</h2>
+      <p>Explore the beauty, history, and culture of Baguio City.</p>
+    </section>
+
+    <!-- Section 1: Tourist Spots -->
+    <section class="feature">
+      <h2>Featured Tourist Spot</h2>
+      <img src="assets/Baguio City Background.jpg" alt="Feature Photo" />
+      <p>[Feature information/details here]</p>
+    </section>
+
+    <!-- 3 Tourist Spots -->
+    <section class="spots">
+      <div class="spot">
+        <h3>Tourist Spot 1</h3>
+        <p>[Short description with 3 sentences.]</p>
+        <p>#hashtag1 #hashtag2 #hashtag3 #hashtag4 #hashtag5</p>
+      </div>
+      <div class="spot">
+        <h3>Tourist Spot 2</h3>
+        <p>[Short description with 3 sentences.]</p>
+        <p>#hashtag1 #hashtag2 #hashtag3 #hashtag4 #hashtag5</p>
+      </div>
+      <div class="spot">
+        <h3>Tourist Spot 3</h3>
+        <p>[Short description with 3 sentences.]</p>
+        <p>#hashtag1 #hashtag2 #hashtag3 #hashtag4 #hashtag5</p>
+      </div>
+    </section>
+
+    <!-- Section 2: Products -->
+    <section class="products">
+      <h2>Local Products</h2>
+      <div class="product-grid">
+        <!-- 12 Product Cards -->
+        <div class="product-card">
+          <img src="assets/Strawberry.jpg" alt="Fresh Strawberries" />
+          <h4>Fresh Strawberries</h4>
+          <p>
+            Seasonal fresh fruit from La Trinidad. Juicy and sweet; best if
+            eaten soon.
+          </p>
+          <p>₱200 / kilo</p>
+          <button onclick="addToCart('Fresh Strawberries')">Add to Cart</button>
+          <button onclick="removeFromCart('Fresh Strawberries')">Remove</button>
+        </div>
+
+        <div class="product-card">
+          <img src="assets/Strawberry Jam.jpg" alt="Strawberry Jam" />
+          <h4>Strawberry Jam (Good Shepherd)</h4>
+          <p>Cooked strawberries with sugar.</p>
+          <p>₱310 / 280g jar</p>
+          <button onclick="addToCart('Strawberry Jam')">Add to Cart</button>
+          <button onclick="removeFromCart('Strawberry Jam')">Remove</button>
+        </div>
+
+        <div class="product-card">
+          <img src="assets/STRAWBERRY WINE.jpg" alt="Strawberry Wine" />
+          <h4>Strawberry Wine</h4>
+          <p>
+            Sweet wine made with Baguio strawberries. A unique local fruit wine
+            option.
+          </p>
+          <p>₱350 / bottle</p>
+          <button onclick="addToCart('Strawberry Wine')">Add to Cart</button>
+          <button onclick="removeFromCart('Strawberry Wine')">Remove</button>
+        </div>
+
+        <div class="product-card">
+          <img src="assets/Ube Jam.jpg" alt="Ube Jam" />
+          <h4>Ube Jam</h4>
+          <p>
+            Purple yam jam. Rich, creamy, sweet — great on toast or desserts.
+          </p>
+          <p>₱400 / jar</p>
+          <button onclick="addToCart('Ube Jam')">Add to Cart</button>
+          <button onclick="removeFromCart('Ube Jam')">Remove</button>
+        </div>
+
+        <div class="product-card">
+          <img src="assets/Peanut Brittle.jpg" alt="Peanut Brittle" />
+          <h4>Peanut Brittle</h4>
+          <p>Crunchy, sweet, nutty treat in jars.</p>
+          <p>₱275 / jar</p>
+          <button onclick="addToCart('Peanut Brittle')">Add to Cart</button>
+          <button onclick="removeFromCart('Peanut Brittle')">Remove</button>
+        </div>
+
+        <div class="product-card">
+          <img src="assets/Choco Flakes.jpg" alt="Choco Flakes" />
+          <h4>Choco Flakes</h4>
+          <p>Chocolate-covered cornflakes in jars. Sweet and crunchy snack.</p>
+          <p>₱200 / jar</p>
+          <button onclick="addToCart('Choco Flakes')">Add to Cart</button>
+          <button onclick="removeFromCart('Choco Flakes')">Remove</button>
+        </div>
+
+        <div class="product-card">
+          <img src="assets/Lengua De Gato.jpg" alt="Lengua de Gato" />
+          <h4>Lengua de Gato</h4>
+          <p>
+            Thin, buttery cookies shaped like cat’s tongue. Perfect with coffee
+            or tea.
+          </p>
+          <p>₱200 / pack</p>
+          <button onclick="addToCart('Lengua de Gato')">Add to Cart</button>
+          <button onclick="removeFromCart('Lengua de Gato')">Remove</button>
+        </div>
+
+        <div class="product-card">
+          <img src="assets/Sundot Kulangot.jpg" alt="Sundot Kulangot" />
+          <h4>Sundot Kulangot</h4>
+          <p>
+            Sweet treat made of sticky rice, coconut milk, and brown sugar
+            packed in tiny coconut shells.
+          </p>
+          <p>₱120 / pack</p>
+          <button onclick="addToCart('Sundot Kulangot')">Add to Cart</button>
+          <button onclick="removeFromCart('Sundot Kulangot')">Remove</button>
+        </div>
+
+        <div class="product-card">
+          <img src="assets/Baguio Longganisa.jpg" alt="Baguio Longganisa" />
+          <h4>Baguio Longganisa</h4>
+          <p>
+            Local garlic sausage, slightly sweet and flavorful. Best cooked at
+            home.
+          </p>
+          <p>₱250 / dozen</p>
+          <button onclick="addToCart('Baguio Longganisa')">Add to Cart</button>
+          <button onclick="removeFromCart('Baguio Longganisa')">Remove</button>
+        </div>
+
+        <div class="product-card">
+          <img src="assets/Pure Honey.jpg" alt="Pure Honey" />
+          <h4>Pure Honey</h4>
+          <p>Natural honey from Benguet. Great flavor and quality.</p>
+          <p>₱300 / bottle</p>
+          <button onclick="addToCart('Pure Honey')">Add to Cart</button>
+          <button onclick="removeFromCart('Pure Honey')">Remove</button>
+        </div>
+
+        <div class="product-card">
+          <img src="assets/Bayong.jpg" alt="Bayong" />
+          <h4>Bayong</h4>
+          <p>
+            Handwoven Filipino bag from pandan or buri leaves, eco-friendly and
+            durable.
+          </p>
+          <p>₱250 / piece</p>
+          <button onclick="addToCart('Bayong')">Add to Cart</button>
+          <button onclick="removeFromCart('Bayong')">Remove</button>
+        </div>
+
+        <div class="product-card">
+          <img src="assets/BarrelMan.jpg" alt="Wood Barrelman" />
+          <h4>Wood Barrelman</h4>
+          <p>
+            Traditional carved wooden Barrelman, a humorous Baguio souvenir.
+          </p>
+          <p>₱450 / piece</p>
+          <button onclick="addToCart('Wood Barrelman')">Add to Cart</button>
+          <button onclick="removeFromCart('Wood Barrelman')">Remove</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Ilocos Sur Tourism. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
