@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url("../img/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Box container */
+.container {
+  background: rgba(10, 20, 40, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 200, 255, 0.3);
+  width: 350px;
+  text-align: center;
+}
+
+/* Text styles */
+h2 {
+  margin: 0 0 15px 0;
+  color: #00c8ff;
+  text-shadow: 0 0 5px rgba(0, 200, 255, 0.8);
+  font-size: 22px;
+}
+
+p {
+  margin: 0 0 20px 0;
+  color: #ccc;
+  font-size: 14px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #88ccee;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #334455;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 30, 0.6);
+  color: #eee;
+  font-size: 14px;
+}
+
+/* Buttons */
+button,
+.btn {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  background: linear-gradient(90deg, #00c8ff, #0077aa);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 200, 255, 0.5);
+  transition: all 0.3s ease;
+  margin-top: 5px;
+}
+
+button:hover,
+.btn:hover {
+  background: linear-gradient(90deg, #ff6600, #cc3300);
+  box-shadow: 0 0 12px rgba(255, 102, 0, 0.6);
+}
+
+/* Links in text */
+p a {
+  color: #00c8ff;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+  color: #ff6600;
+}
