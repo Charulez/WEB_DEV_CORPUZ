@@ -26,6 +26,53 @@ nav ul li a {
   font-weight: bold;
 }
 
+.hero {
+  background: url("../img/Background.png") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 20px 20px 140px 20px; /* top right bottom left */
+  position: relative;
+}
+
+.hero.thin {
+  background: url("../img/Background.png") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 20px 20px 140px 20px; /* top right bottom left */
+  padding: 20px 20px 140px 20px; /* top right bottom left */
+  position: relative;
+}
+
+.hero.thin h1 {
+  font-size: 2.5rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 0;
+}
+
+.hero.thin p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centers the images */
+  gap: 15px; /* space between images */
+  margin-top: 10px;
+}
+
+.photo-gallery img {
+  width: 200px; /* adjust this number to make images smaller/larger */
+  height: auto; /* keeps aspect ratio */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+}
+
 /* Main Grid */
 .main-grid {
   display: grid;
