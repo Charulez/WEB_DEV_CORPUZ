@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+nav ul {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Main Grid */
+.main-grid {
+  display: grid;
+  grid-template-columns: 40% 40% 20%;
+  gap: 10px;
+  padding: 20px;
+}
+main {
+  background: #f9f9f9;
+  padding: 15px;
+}
+aside {
+  background: #f1f1f1;
+  padding: 15px;
+}
+
+/* Cards */
+.portrait {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.grid-three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  background: #fff;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+/* Calendar */
+.calendar {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.calendar th,
+.calendar td {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 5px;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+footer input,
+footer textarea {
+  margin: 5px 0;
+  padding: 10px;
+}
+footer button {
+  padding: 10px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+footer button:hover {
+  background: #ddd;
+}
+
+/* Gallery Page */
+.gallery {
+  padding: 20px;
+}
+.grid-4x3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  background: #fff;
+}
+.item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+}
+.item button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  margin: 5px 2px;
+  cursor: pointer;
+}
+.item button:hover {
+  background: #666;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+  .grid-4x3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
