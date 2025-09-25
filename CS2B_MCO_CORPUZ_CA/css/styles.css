@@ -57,20 +57,17 @@ nav ul li a {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
-.photo-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* centers the images */
-  gap: 15px; /* space between images */
-  margin-top: 10px;
+.intro {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.photo-gallery img {
-  width: 200px; /* adjust this number to make images smaller/larger */
+.intro .portrait {
+  width: 200px; /* adjust to preferred size */
   height: auto; /* keeps aspect ratio */
-  border: 1px solid #ccc;
-  border-radius: 5px;
   display: block;
+  margin: 10px auto; /* centers the image */
+  border: black 5px solid;
 }
 
 /* Main Grid */
