@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgb(245, 248, 250);
+  color: rgb(30, 30, 30);
+}
+
+/* Header */
+header {
+  background: linear-gradient(
+    90deg,
+    rgb(0, 153, 255) 0%,
+    rgb(0, 102, 204) 100%
+  );
+  color: rgb(255, 255, 255);
+  padding: 1.5em;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 10; /* Ensure header is above other content */
+}
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  gap: 24px;
+  padding: 0;
+  margin-top: 10px;
+}
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: rgb(255, 255, 153);
+}
+
+/* Main Content Layout (Flex to put Products and Cart side-by-side) */
+.main-content {
+  display: flex;
+  max-width: 1400px; /* Increased max width for content area */
+  margin: 20px auto;
+  gap: 24px;
+  padding: 0 20px;
+}
+
+.product-area {
+  flex-grow: 1; /* Allows the product area to take up available space */
+}
+
+/* Sections */
+section {
+  padding: 20px 0; /* Adjusted padding */
+}
+
+/* Products - DRINKS (CSS Grid Layout) */
+.product-drinks {
+  display: grid; /* USE CSS GRID */
+  /* FIX: Grid layout for 4 columns, adjusts automatically */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Products - SNACKS (CSS Flexbox Layout) */
+.product-snacks {
+  display: flex; /* USE CSS FLEXBOX */
+  flex-wrap: wrap; /* FIX: Allow items to wrap on smaller screens */
+  justify-content: space-between; /* Distribute space between items */
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  /* For Flexbox snacks, ensures cards are roughly quarter width */
+  flex: 1 1 calc(25% - 24px);
+  min-width: 200px; /* Minimum size for cards */
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(220, 220, 220);
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  background: rgb(245, 255, 250);
+}
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.product-card h4 {
+  color: rgb(0, 102, 153);
+  margin: 10px 0;
+}
+.product-card button {
+  background: rgb(0, 153, 204);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 16px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.product-card button:hover {
+  background: rgb(0, 102, 153);
+}
+
+/* Aside / Cart Sidebar */
+aside {
+  width: 300px; /* Fixed width for sidebar */
+  flex-shrink: 0; /* Prevents sidebar from shrinking */
+  margin: 0;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  align-self: flex-start; /* Aligns to the top */
+  position: sticky; /* Sticky sidebar */
+  top: 100px; /* Below the header */
+}
+
+/* Cart item styles */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px dotted rgb(220, 220, 220);
+  font-size: 0.95em;
+}
+
+.remove-btn {
+  background: rgb(204, 0, 51);
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8em;
+  transition: background 0.3s ease;
+}
+
+.remove-btn:hover {
+  background: rgb(153, 0, 38);
+}
+
+.text-muted {
+  color: rgb(150, 150, 150);
+  font-style: italic;
+  text-align: center;
+}
+
+.cart-total h3 {
+  color: rgb(0, 102, 153);
+  margin: 10px 0;
+  text-align: right;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(
+    90deg,
+    rgb(0, 102, 204) 0%,
+    rgb(0, 153, 255) 100%
+  );
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 1.5em;
+  clear: both;
+  margin-top: 40px;
+  font-weight: bold;
+}
